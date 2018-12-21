@@ -1,0 +1,16 @@
+# running details
+1) use_one_hot_embeddings should be false on gpu in BertModel/init
+2) use_tpu should be false in extract_features/model_fn_builder
+
+# vocab
+3) There is no language embedding
+4) 110k shared WordPiece vocabulary
+5) Need to confirm that WordPiece's respect whitespace boundaries
+6) was are the special tokens?
+7) look at the tokenization section of their readme
+
+# model
+
+
+# their multi ling embeddings
+1) "For classification tasks, the first vector (corresponding to [CLS]) is  used as the "sentence vector". Note that this only makes sense because the entire model is fine-tuned."
